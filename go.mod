@@ -1,3 +1,3 @@
-module msg_broker_b73fb0
+module msg_broker_746a3b
 
 go 1.19

